@@ -7,7 +7,7 @@ argumento que nao seja int ou float.
 '''
 from functools import reduce
 
-lista_num = 5.5
+lista_num = [5,5,5]
 
 def multiplicacao (*args):
     return reduce(lambda count, item: count * item if isinstance(item, (int, float)) else 0, args, 1)
